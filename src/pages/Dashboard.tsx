@@ -2,6 +2,7 @@ import React from 'react'
 import midjourney from "../assets/midjourney.png";
 import wave from "../assets/wave.svg";
 import logoswrap from "../assets/logoswrap.svg";
+import '../index.css';
 
 const Dashboard = () => {
   return (
@@ -36,7 +37,7 @@ const Dashboard = () => {
         </div>
         <img src={wave} alt="wave svg" className='-mt-10'/>
         <p className='text-center text-xs text-[#EAEAEA]/50'>Trusted by 4,000+ companies</p>
-        <div className='flex items-center justify-center'><img src={logoswrap} alt="logoswrap" className='pt-3 w-11/12'/></div>
+        <div className='animate-marquee flex items-center justify-center'><img src={logoswrap} alt="logoswrap" className='pt-3 w-11/12'/></div>
     </div>
   )
 }
