@@ -6,7 +6,7 @@
 }
 
 .animate-marquee {
-  display: inline-block;
+  display: flex flex-nowrap;
   min-width: 100%;
   animation: marquee 10s linear infinite;
 }

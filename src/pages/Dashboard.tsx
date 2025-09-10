@@ -3,10 +3,12 @@ import midjourney from "../assets/midjourney.png";
 import wave from "../assets/wave.svg";
 import logoswrap from "../assets/logoswrap.svg";
 import '../index.css';
+import stepsbar from "../assets/stepsbar.svg";
+import arrowright from "../assets/arrowright.svg";
 
 const Dashboard = () => {
   return (
-    <div className='bg-linear-to-b from-[#0C111D] from-0% to-[#1E5D5C] to-100% w-screen h-screen'>
+    <div className='bg-linear-to-b from-[#0C111D] from-0% to-[#1E5D5C] to-100% w-screen h-screen overflow-x-hidden overflow-y-scroll'>
         <div className='flex justify-between pt-15 px-5'>
             <div className='flex gap-x-2 items-center justify-center'>
                 {/* logo */}
@@ -37,7 +39,53 @@ const Dashboard = () => {
         </div>
         <img src={wave} alt="wave svg" className='-mt-10'/>
         <p className='text-center text-xs text-[#EAEAEA]/50'>Trusted by 4,000+ companies</p>
-        <div className='animate-marquee flex items-center justify-center'><img src={logoswrap} alt="logoswrap" className='pt-3 w-11/12'/></div>
+        <div className='flex items-center justify-center animate-marquee gap-x-3 pt-5'>
+            <img src={logoswrap} alt="logoswrap" className='pt-3 w-auto'/>
+            <img src={logoswrap} alt="logoswrap" className='pt-3 w-auto'/>
+            <img src={logoswrap} alt="logoswrap" className='pt-3 w-auto'/>
+        </div>
+        <p className='pt-50 text-center text-white/60 font-base text-lg font-semibold'>Everything You Need to Succeed</p>
+        <p className='pt-2 text-xs text-center text-white/45 px-5'>Powerful features to help you manage, collaborate, and grow</p>
+        <div className='text-white flex flex-col pt-5 px-6 bg-[#FFFFFF]/5 mx-6 mt-5 border-[#FFFFFF]/10 border-2 rounded-2xl'>
+            <img src={stepsbar} alt="steps bar" className='w-10 h-auto'/>
+            <p className='font-semibold pt-3 text-base'>Advanced Analytics</p>
+            <p className='font-light text-sm pt-2 text-justify'>Get deep insights into your team's performance and productivity</p>
+            {/* learn more */}
+            <div className='flex pt-2 gap-x-2 text-sm'>
+                <p>Learn more</p>
+                <img src={arrowright} alt="arrow right" />
+            </div>
+        </div>
+        <div className='flex flex-col pt-5 px-6 bg-[#FFFFFF]/5 mx-6 mt-5 border-[#FFFFFF]/10 border-2 rounded-2xl'>
+            <img src={stepsbar} alt="steps bar" className='w-10 h-auto'/>
+            <p>Advanced Analytics</p>
+            <p>Get deep insights into your team's performance and productivity</p>
+            {/* learn more */}
+            <div className='flex'>
+                <p>Learn more</p>
+                <img src={arrowright} alt="arrow right" />
+            </div>
+        </div>
+        <div className='flex flex-col pt-5 px-6 bg-[#FFFFFF]/5 mx-6 mt-5 border-[#FFFFFF]/10 border-2 rounded-2xl'>
+            <img src={stepsbar} alt="steps bar" className='w-10 h-auto'/>
+            <p>Advanced Analytics</p>
+            <p>Get deep insights into your team's performance and productivity</p>
+            {/* learn more */}
+            <div className='flex'>
+                <p>Learn more</p>
+                <img src={arrowright} alt="arrow right" />
+            </div>
+        </div>
+        <div className='flex flex-col pt-5 px-6 bg-[#FFFFFF]/5 mx-6 mt-5 border-[#FFFFFF]/10 border-2 rounded-2xl'>
+            <img src={stepsbar} alt="steps bar" className='w-10 h-auto'/>
+            <p>Advanced Analytics</p>
+            <p>Get deep insights into your team's performance and productivity</p>
+            {/* learn more */}
+            <div className='flex'>
+                <p>Learn more</p>
+                <img src={arrowright} alt="arrow right" />
+            </div>
+        </div>
     </div>
   )
 }
