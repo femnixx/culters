@@ -98,12 +98,22 @@ const Dashboard = () => {
         </div>
         <p className='pt-24 text-center text-white/80 text-xl font-base'>Simple Setup, Powerful Results</p>
         <p className='text-sm pt-2.5 text-center font-light text-white'>Get started in minutes with our intuitive onboarding process</p>
-        <div className='flex items-center justify-center'>
+        <div className='flex flex-col items-center justify-center'>
+            {/* first circle and text */}
             <div className='max-h-fit max-w-fit mt-12 p-2 bg-[#FFFFFF]/10 border-[#FFFFFF]/5 border-3 rounded-full w-fit h-fit'>
                 <img src={people} alt="people icons" />
             </div>
+            <p className='mt-3 text-white font-semibold'>Sign Up</p>
+            <p className='mt-2 text-white text-sm'>Create your account in seconds</p>
+            
+            {/* second circle and text */}
+            <div className='max-h-fit max-w-fit mt-12 p-2 bg-[#FFFFFF]/10 border-[#FFFFFF]/5 border-3 rounded-full w-fit h-fit'>
+                <img src={people} alt="people icons" />
+            </div>
+            <p className='mt-3 text-white font-semibold'>Sign Up</p>
+            <p className='mt-2 text-white text-sm'>Create your account in seconds</p>
         </div>
-    
+        
     </div>
   )
 }
