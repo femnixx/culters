@@ -1,0 +1,44 @@
+import React from 'react'
+import midjourney from "../assets/midjourney.png";
+import wave from "../assets/wave.svg";
+import logoswrap from "../assets/logoswrap.svg";
+
+const Dashboard = () => {
+  return (
+    <div className='bg-linear-to-b from-[#0C111D] from-0% to-[#1E5D5C] to-100% w-screen h-screen'>
+        <div className='flex justify-between pt-15 px-5'>
+            <div className='flex gap-x-2 items-center justify-center'>
+                {/* logo */}
+                <img src={midjourney} alt="midjourney" className='w-8'/>
+                <p className='text-white text-sm'>FlowPro</p>
+            </div>
+            {/* Start free trial */}
+            <div className='flex items-center justify-center bg-[#FFFFFF]/10 px-1.5 rounded-full py-1'>
+                <div className='bg-[#35A89A] flex items-center justify-center px-3 rounded-full py-1'>
+                    <p className=' text-sm'>Start Free Trial</p>
+                </div>
+            </div>
+        </div>
+        <div className='flex flex-col items-center justify-center text-center pt-10'>
+            <h1 className='text-transparent bg-clip-text bg-gradient-to-b from-[#FFFFFF]/60 to-[#FFFFFF] text-xl'>Streamline Your WorkFlow</h1>
+            <p className='text-white pt-3 text-xl'>with flowPro</p>
+        </div>
+        <p className='text-sm pt-5 text-center text-transparent bg-clip-text bg-gradient-to-b from-[#EAEAEA]/60 to-[#EAEAEA]/50' >The all-one platform that helps teams work smarter, faster, anymore efficiently</p>
+        <div className='pt-5 flex items-center justify-center gap-x-5'>
+            <div className='bg-[#FFFFFF]/10 px-1 py-1 rounded-full'>
+                <div className='bg-[#35A89A] px-3 py-1 rounded-full'>
+                    <p className='text-base'>Login</p>
+                </div>
+            </div>
+            <div className='bg-transparent border-3 rounded-full px-3 border-[#FFFFFF]/10 py-1'>
+               <p  className='text-white'>Book Demo</p>
+            </div>
+        </div>
+        <img src={wave} alt="wave svg" className='-mt-10'/>
+        <p className='text-center text-xs text-[#EAEAEA]/50'>Trusted by 4,000+ companies</p>
+        <div className='flex items-center justify-center'><img src={logoswrap} alt="logoswrap" className='pt-3 w-11/12'/></div>
+    </div>
+  )
+}
+
+export default Dashboard
