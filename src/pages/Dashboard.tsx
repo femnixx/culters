@@ -8,6 +8,9 @@ import arrowright from "../assets/arrowright.svg";
 import lightning from "../assets/lightning.svg";
 import shield from "../assets/shield.svg";
 import clocks from "../assets/clocks.svg";
+import people from "../assets/people.svg";
+import gemini from "../assets/gemini.svg";
+import settings from "../assets/settings.svg";
 
 const Dashboard = () => {
   return (
@@ -84,7 +87,7 @@ const Dashboard = () => {
         </div>
         {/* card 4 */}
         <div className='text-white flex flex-col py-2 px-6 bg-[#FFFFFF]/5 mx-6 mt-5 border-[#FFFFFF]/10 border-3 rounded-2xl'>
-            <img src={stepsbar} alt="steps bar" className='w-10 h-auto'/>
+            <img src={shield} alt="steps bar" className='w-10 h-auto'/>
             <p className='pt-1 text-base font-semibold'>Advanced Analytics</p>
             <p className='pt-3 text-xs font-base text-justify'>Get deep insights into your team's performance and productivity</p>
             {/* learn more */}
@@ -93,6 +96,14 @@ const Dashboard = () => {
                 <img src={arrowright} alt="arrow right" />
             </div>
         </div>
+        <p className='pt-24 text-center text-white/80 text-xl font-base'>Simple Setup, Powerful Results</p>
+        <p className='text-sm pt-2.5 text-center font-light text-white'>Get started in minutes with our intuitive onboarding process</p>
+        <div className='flex items-center justify-center'>
+            <div className='max-h-fit max-w-fit mt-12 p-2 bg-[#FFFFFF]/10 border-[#FFFFFF]/5 border-3 rounded-full w-fit h-fit'>
+                <img src={people} alt="people icons" />
+            </div>
+        </div>
+    
     </div>
   )
 }
