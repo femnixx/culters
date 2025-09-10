@@ -119,6 +119,8 @@ const Dashboard = () => {
             <p className='mt-3 text-white font-semibold'>Collaborate</p>
             <p className='mt-2 text-white text-sm'>Start working with your team</p>
         </div>
+        <p className='pt-24'>Work With Your Favorite Tools</p>
+        <p>Seamlessly integrate with the tools you already use</p>
     </div>
   )
 }
