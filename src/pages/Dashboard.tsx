@@ -5,6 +5,9 @@ import logoswrap from "../assets/logoswrap.svg";
 import '../index.css';
 import stepsbar from "../assets/stepsbar.svg";
 import arrowright from "../assets/arrowright.svg";
+import lightning from "../assets/lightning.svg";
+import shield from "../assets/shield.svg";
+import clocks from "../assets/clocks.svg";
 
 const Dashboard = () => {
   return (
@@ -46,42 +49,46 @@ const Dashboard = () => {
         </div>
         <p className='pt-50 text-center text-white/60 font-base text-lg font-semibold'>Everything You Need to Succeed</p>
         <p className='pt-2 text-xs text-center text-white/45 px-5'>Powerful features to help you manage, collaborate, and grow</p>
-        <div className='text-white flex flex-col pt-5 px-6 bg-[#FFFFFF]/5 mx-6 mt-5 border-[#FFFFFF]/10 border-2 rounded-2xl'>
-            <img src={stepsbar} alt="steps bar" className='w-10 h-auto'/>
-            <p className='font-semibold pt-3 text-base'>Advanced Analytics</p>
-            <p className='font-light text-sm pt-2 text-justify'>Get deep insights into your team's performance and productivity</p>
+        {/* card 1 */}
+        <div className='py-2 text-white flex flex-col px-6 bg-[#FFFFFF]/5 mx-6 mt-12 border-[#FFFFFF]/10 border-3 rounded-2xl'>
+            <img src={stepsbar} alt="steps bar" className='w-8 h-auto'/>
+            <p className='font-semibold pt-1 text-base'>Advanced Analytics</p>
+            <p className='font-base text-xs pt-3 text-justify'>Get deep insights into your team's performance and productivity</p>
             {/* learn more */}
-            <div className='flex pt-2 gap-x-2 text-sm'>
+            <div className='flex pt-3 gap-x-2 text-xs'>
+                <p>Learn more</p>
+                <img src={arrowright} alt="arrow right" className=''/>
+            </div>
+        </div>
+        {/* card 2 */}
+        <div className='flex flex-col py-2 px-6 bg-[#FFFFFF]/5 mx-6 mt-5 border-[#FFFFFF]/10 border-3 rounded-2xl'>
+            <img src={clocks} alt="steps bar" className='w-10 h-auto'/>
+            <p className='text-white font-semibold pt-1 text-base'>Time Tracking</p>
+            <p className='pt-3 text-xs font-base text-justify text-white'>Track time spent on projects and tasks automatically</p>
+            {/* learn more */}
+            <div className='flex pt-3 gap-x-2 text-xs text-white'>
                 <p>Learn more</p>
                 <img src={arrowright} alt="arrow right" />
             </div>
         </div>
-        <div className='flex flex-col pt-5 px-6 bg-[#FFFFFF]/5 mx-6 mt-5 border-[#FFFFFF]/10 border-2 rounded-2xl'>
-            <img src={stepsbar} alt="steps bar" className='w-10 h-auto'/>
-            <p>Advanced Analytics</p>
-            <p>Get deep insights into your team's performance and productivity</p>
+        {/* card 3 */}
+        <div className='text-white flex flex-col py-2 px-6 bg-[#FFFFFF]/5 mx-6 mt-5 border-[#FFFFFF]/10 border-3 rounded-2xl'>
+            <img src={lightning} alt="steps bar" className='w-10 h-auto'/>
+            <p className='pt-1 text-base font-semibold'>Advanced Analytics</p>
+            <p className='pt-3 text-xs font-base text-justify'>Get deep insights into your team's performance and productivity</p>
             {/* learn more */}
-            <div className='flex'>
+            <div className='flex pt-3 gap-x-2 text-xs text-white'>
                 <p>Learn more</p>
                 <img src={arrowright} alt="arrow right" />
             </div>
         </div>
-        <div className='flex flex-col pt-5 px-6 bg-[#FFFFFF]/5 mx-6 mt-5 border-[#FFFFFF]/10 border-2 rounded-2xl'>
+        {/* card 4 */}
+        <div className='text-white flex flex-col py-2 px-6 bg-[#FFFFFF]/5 mx-6 mt-5 border-[#FFFFFF]/10 border-3 rounded-2xl'>
             <img src={stepsbar} alt="steps bar" className='w-10 h-auto'/>
-            <p>Advanced Analytics</p>
-            <p>Get deep insights into your team's performance and productivity</p>
+            <p className='pt-1 text-base font-semibold'>Advanced Analytics</p>
+            <p className='pt-3 text-xs font-base text-justify'>Get deep insights into your team's performance and productivity</p>
             {/* learn more */}
-            <div className='flex'>
-                <p>Learn more</p>
-                <img src={arrowright} alt="arrow right" />
-            </div>
-        </div>
-        <div className='flex flex-col pt-5 px-6 bg-[#FFFFFF]/5 mx-6 mt-5 border-[#FFFFFF]/10 border-2 rounded-2xl'>
-            <img src={stepsbar} alt="steps bar" className='w-10 h-auto'/>
-            <p>Advanced Analytics</p>
-            <p>Get deep insights into your team's performance and productivity</p>
-            {/* learn more */}
-            <div className='flex'>
+            <div className='flex pt-3 gap-x-2 text-xs'>
                 <p>Learn more</p>
                 <img src={arrowright} alt="arrow right" />
             </div>
