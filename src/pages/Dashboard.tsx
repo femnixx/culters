@@ -108,12 +108,17 @@ const Dashboard = () => {
             
             {/* second circle and text */}
             <div className='max-h-fit max-w-fit mt-12 p-2 bg-[#FFFFFF]/10 border-[#FFFFFF]/5 border-3 rounded-full w-fit h-fit'>
-                <img src={people} alt="people icons" />
+                <img src={settings} alt="people icons" />
             </div>
-            <p className='mt-3 text-white font-semibold'>Sign Up</p>
-            <p className='mt-2 text-white text-sm'>Create your account in seconds</p>
+            <p className='mt-3 text-white font-semibold'>Configure</p>
+            <p className='mt-2 text-white text-sm'>Set up your workspace preferences</p>
+            {/* third circle and text */}
+            <div className='max-h-fit max-w-fit mt-12 p-2 bg-[#FFFFFF]/10 border-[#FFFFFF]/5 border-3 rounded-full w-fit h-fit'>
+                <img src={gemini} alt="people icons" />
+            </div>
+            <p className='mt-3 text-white font-semibold'>Collaborate</p>
+            <p className='mt-2 text-white text-sm'>Start working with your team</p>
         </div>
-        
     </div>
   )
 }
