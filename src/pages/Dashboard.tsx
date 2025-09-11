@@ -119,8 +119,26 @@ const Dashboard = () => {
             <p className='mt-3 text-white font-semibold'>Collaborate</p>
             <p className='mt-2 text-white text-sm'>Start working with your team</p>
         </div>
-        <p className='pt-24'>Work With Your Favorite Tools</p>
-        <p>Seamlessly integrate with the tools you already use</p>
+        <p className='text-white text-xl pt-24 text-center'>Work With Your Favorite Tools</p>
+        <p className='text-white pt-2.5 text-center text-xs text-white/75'>Seamlessly integrate with the tools you already use</p>
+        {/* grid */}
+        <div className='grid grid-cols-3 gap-4 mt-20 flex'>
+            <p>text</p>
+            <p>text</p>
+            <p>text</p>
+            <p>text</p>
+            <p>text</p>
+            <p>text</p>
+            <p>text</p>
+            <p>text</p>
+            <p>text</p>
+            <p>text</p>
+            <p>text</p>
+            <p>text</p>
+            <p>text</p>
+            <p>text</p>
+            <p>text</p>
+        </div>
     </div>
   )
 }
