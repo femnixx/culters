@@ -123,52 +123,56 @@ const Dashboard = () => {
         <p className='pt-2.5 text-center text-xs text-white/75'>Seamlessly integrate with the tools you already use</p>
         {/* grid */}
         <div className='grid grid-cols-3 gap-4 mt-20 justify-center items-center text-center px-5'>
-            <div className='flex justify-center items-center'>
+            <div className='flex justify-center items-center bg-white/5 border-1 border-white/10 py-2 rounded-lg'>
                 <img src={gemini} alt="" />
             </div>
-            <div className='flex justify-center items-center'>
+            <div className='flex justify-center items-center  bg-white/5 border-1 border-white/10 py-2 rounded-lg'>
                 <img src={gemini} alt="" />
             </div>
-            <div className='flex justify-center items-center'>
+            <div className='flex justify-center items-center  bg-white/5 border-1 border-white/10 py-2 rounded-lg'>
                 <img src={gemini} alt="" />
             </div>
-            <div className='flex justify-center items-center'>
+            <div className='flex justify-center items-center  bg-white/5 border-1 border-white/10 py-2 rounded-lg'>
                 <img src={gemini} alt="" />
             </div>
-            <div className='flex justify-center items-center'>
+            <div className='flex justify-center items-center  bg-white/5 border-1 border-white/10 py-2 rounded-lg'>
                 <img src={gemini} alt="" />
             </div>
-            <div className='flex justify-center items-center'>
+            <div className='flex justify-center items-center  bg-white/5 border-1 border-white/10 py-2 rounded-lg'>
                 <img src={gemini} alt="" />
             </div>
-            <div className='flex justify-center items-center'>
+            <div className='flex justify-center items-center  bg-white/5 border-1 border-white/10 py-2 rounded-lg'>
                 <img src={gemini} alt="" />
             </div>
-            <div className='flex justify-center items-center'>
+            <div className='flex justify-center items-center  bg-white/5 border-1 border-white/10 py-2 rounded-lg'>
                 <img src={gemini} alt="" />
             </div>
-            <div className='flex justify-center items-center'>
+            <div className='flex justify-center items-center  bg-white/5 border-1 border-white/10 py-2 rounded-lg'>
                 <img src={gemini} alt="" />
             </div>
-            <div className='flex justify-center items-center'>
+            <div className='flex justify-center items-center  bg-white/5 border-1 border-white/10 py-2 rounded-lg'>
                 <img src={gemini} alt="" />
             </div>
-            <div className='flex justify-center items-center'>
+            <div className='flex justify-center items-center  bg-white/5 border-1 border-white/10 py-2 rounded-lg'>
                 <img src={gemini} alt="" />
             </div>
-            <div className='flex justify-center items-center'>
+            <div className='flex justify-center items-center  bg-white/5 border-1 border-white/10 py-2 rounded-lg'>
                 <img src={gemini} alt="" />
             </div>
-            <div className='flex justify-center items-center'>
+            <div className='flex justify-center items-center  bg-white/5 border-1 border-white/10 py-2 rounded-lg'>
                 <img src={gemini} alt="" />
             </div>
-            <div className='flex justify-center items-center'>
+            <div className='flex justify-center items-center  bg-white/5 border-1 border-white/10 py-2 rounded-lg'>
                 <img src={gemini} alt="" />
             </div>
-            <div className='flex justify-center items-center'>
+            <div className='flex justify-center items-center  bg-white/5 border-1 border-white/10 py-2 rounded-lg'>
                 <img src={gemini} alt="" />
             </div>
         </div>
+        <p className='pt-26 text-center text-xl text-transparent bg-clip-text bg-gradient-to-b from-white/0 to-white/100 '>What Our Customers Say</p>
+        <p className='pt-2.5 text-xs text-center text-transparent bg-clip-text bg-gradient-to-b from-white/0 to-white/100 '>Join thousands of satisfied teams using FlowPro</p>
+        
+    
     </div>
   )
 }
