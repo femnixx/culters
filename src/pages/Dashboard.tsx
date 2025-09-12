@@ -11,6 +11,9 @@ import clocks from "../assets/clocks.svg";
 import people from "../assets/people.svg";
 import gemini from "../assets/gemini.svg";
 import settings from "../assets/settings.svg";
+import zap from "../assets/zap.svg";
+import twolayers from "../assets/twolayers.svg";
+import threelayers from "../assets/threelayers.svg";
 
 const Dashboard = () => {
   return (
@@ -177,6 +180,17 @@ const Dashboard = () => {
         <p className='pt-25 text-center text-xl text-transparent bg-clip-text bg-gradient-to-t from-[#FFFFFF] from-100% to-[#FFFFFF]/0 to-0%'>Choose Your Plan</p>
         <p className='pt-2.5 text-center text-xs bg-clip-text bg-gradient-to-b text-transparent from-white/0 to-white'>Flexible plans for teams of any size</p>
 
+        {/* Cards for plans */}
+        <div className='flex flex-col px-6'>
+            {/* main card */}
+            <div className='flex flex-col justify-center items-center'>
+                <div>
+                    <img src={lightning} alt="lightninng" />
+                </div>
+                <p>Basic plan</p>
+            </div>
+            <p>Basic plan</p>
+        </div>
     </div>
   )
 }
