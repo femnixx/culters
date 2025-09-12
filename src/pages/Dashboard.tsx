@@ -14,6 +14,7 @@ import settings from "../assets/settings.svg";
 import zap from "../assets/zap.svg";
 import twolayers from "../assets/twolayers.svg";
 import threelayers from "../assets/threelayers.svg";
+import checkicon from "../assets/checkicon.svg";
 
 const Dashboard = () => {
   return (
@@ -181,7 +182,7 @@ const Dashboard = () => {
         <p className='pt-2.5 text-center text-xs bg-clip-text bg-gradient-to-b text-transparent from-white/0 to-white'>Flexible plans for teams of any size</p>
 
         {/* Cards for plans */}
-        <div className='flex flex-col px-5 py-8 mx-6 mt-12 bg-white/10 rounded-xl'>
+        <div className='flex flex-col px-5 py-4 mx-6 mt-12 bg-white/10 rounded-xl'>
             {/* main card */}
             <div className='flex flex-col justify-center items-center'>
                 <div className='bg-white/10 p-3 rounded-full'>
@@ -189,7 +190,7 @@ const Dashboard = () => {
                 </div>
                 <p className='text-center text-white mt-2'>Basic plan</p>
             </div>
-            <div className='flex justify-center flex-row mt-7 items-end'>
+            <div className='flex justify-center flex-row mt-5 items-end'>
                 <p className='text-center text-white text-4xl font-semibold'>$10</p>
                 <p className='text-white font-semibold text-'>/month</p>
             </div>
@@ -205,7 +206,125 @@ const Dashboard = () => {
                     <div className='rounded-full border-1 px-2 border-[#D9D9D9]'>+</div>
                 </div>
             </div>
-            <p>Hi there</p>
+            <div className='flex flex-col gap-y-2 text-white'>
+                <div className='flex mt-7 '>
+                    <img src={checkicon} alt="check icon" className='pr-2'/>
+                    <p>Flexible Plans</p>
+                </div>
+                <div className='flex'>
+                     <img src={checkicon} alt="check icon" className='pr-2'/>
+                    <p>Scalability</p>
+                </div>
+                <div className='flex'>
+                     <img src={checkicon} alt="check icon" className='pr-2'/>
+                    <p>24/7 Email Support</p>
+                </div>
+                <div className='flex'>
+                     <img src={checkicon} alt="check icon" className='pr-2'/>
+                    <p>200 Recording</p>
+                </div>
+                <div className='flex'>
+                     <img src={checkicon} alt="check icon" className='pr-2'/>
+                    <p>30 Days Backup</p>
+                </div>
+            </div>
+            <div className='w-full flex justify-center items-center'><button className='w-fit px-5 py-1.5 rounded-full mt-7 border-2 border-white/10 text-white'>Get Started</button></div>
+        </div>
+        <div className='flex flex-col px-5 py-4 mx-6 mt-12 bg-white/10 rounded-xl'>
+            {/* main card */}
+            <div className='flex flex-col justify-center items-center'>
+                <div className='bg-white/10 p-3 rounded-full'>
+                    <img src={zap} alt="white lightning" />
+                </div>
+                <p className='text-center text-white mt-2'>Basic plan</p>
+            </div>
+            <div className='flex justify-center flex-row mt-5 items-end'>
+                <p className='text-center text-white text-4xl font-semibold'>$10</p>
+                <p className='text-white font-semibold text-'>/month</p>
+            </div>
+            <p className='text-center text-sm mt-2 text-white'>Billed annnually.</p>
+            <div className='w-full px-10'>
+                <div className='mt-7 flex bg-white justify-between px-3 rounded-full py-1 items-center'>
+                    <div className='rounded-full border-1 px-2 border-[#D9D9D9]'>
+                        -
+                    </div>
+                    <div className='font-semibold text-sm'>
+                        1 USER
+                    </div>
+                    <div className='rounded-full border-1 px-2 border-[#D9D9D9]'>+</div>
+                </div>
+            </div>
+            <div className='flex flex-col gap-y-2 text-white'>
+                <div className='flex mt-7 '>
+                    <img src={checkicon} alt="check icon" className='pr-2'/>
+                    <p>Flexible Plans</p>
+                </div>
+                <div className='flex'>
+                     <img src={checkicon} alt="check icon" className='pr-2'/>
+                    <p>Scalability</p>
+                </div>
+                <div className='flex'>
+                     <img src={checkicon} alt="check icon" className='pr-2'/>
+                    <p>24/7 Email Support</p>
+                </div>
+                <div className='flex'>
+                     <img src={checkicon} alt="check icon" className='pr-2'/>
+                    <p>200 Recording</p>
+                </div>
+                <div className='flex'>
+                     <img src={checkicon} alt="check icon" className='pr-2'/>
+                    <p>30 Days Backup</p>
+                </div>
+            </div>
+            <div className='w-full flex justify-center items-center'><button className='w-fit px-5 py-1.5 rounded-full mt-7 border-2 border-white/10 text-white'>Get Started</button></div>
+        </div>
+        <div className='flex flex-col px-5 py-4 mx-6 mt-12 bg-white/10 rounded-xl'>
+            {/* main card */}
+            <div className='flex flex-col justify-center items-center'>
+                <div className='bg-white/10 p-3 rounded-full'>
+                    <img src={zap} alt="white lightning" />
+                </div>
+                <p className='text-center text-white mt-2'>Basic plan</p>
+            </div>
+            <div className='flex justify-center flex-row mt-5 items-end'>
+                <p className='text-center text-white text-4xl font-semibold'>$10</p>
+                <p className='text-white font-semibold text-'>/month</p>
+            </div>
+            <p className='text-center text-sm mt-2 text-white'>Billed annnually.</p>
+            <div className='w-full px-10'>
+                <div className='mt-7 flex bg-white justify-between px-3 rounded-full py-1 items-center'>
+                    <div className='rounded-full border-1 px-2 border-[#D9D9D9]'>
+                        -
+                    </div>
+                    <div className='font-semibold text-sm'>
+                        1 USER
+                    </div>
+                    <div className='rounded-full border-1 px-2 border-[#D9D9D9]'>+</div>
+                </div>
+            </div>
+            <div className='flex flex-col gap-y-2 text-white'>
+                <div className='flex mt-7 '>
+                    <img src={checkicon} alt="check icon" className='pr-2'/>
+                    <p>Flexible Plans</p>
+                </div>
+                <div className='flex'>
+                     <img src={checkicon} alt="check icon" className='pr-2'/>
+                    <p>Scalability</p>
+                </div>
+                <div className='flex'>
+                     <img src={checkicon} alt="check icon" className='pr-2'/>
+                    <p>24/7 Email Support</p>
+                </div>
+                <div className='flex'>
+                     <img src={checkicon} alt="check icon" className='pr-2'/>
+                    <p>200 Recording</p>
+                </div>
+                <div className='flex'>
+                     <img src={checkicon} alt="check icon" className='pr-2'/>
+                    <p>30 Days Backup</p>
+                </div>
+            </div>
+            <div className='w-full flex justify-center items-center'><button className='w-fit px-5 py-1.5 rounded-full mt-7 border-2 border-white/10 text-white'>Get Started</button></div>
         </div>
     </div>
   )
