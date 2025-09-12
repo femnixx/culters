@@ -184,12 +184,26 @@ const Dashboard = () => {
         <div className='flex flex-col px-5 py-8 mx-6 mt-12 bg-white/10 rounded-xl'>
             {/* main card */}
             <div className='flex flex-col justify-center items-center'>
-                <div>
+                <div className='bg-white/10 p-3 rounded-full'>
                     <img src={zap} alt="white lightning" />
                 </div>
-                <p>Basic plan</p>
+                <p className='text-center text-white mt-2'>Basic plan</p>
             </div>
-            <p>Basic plan</p>
+            <div className='flex justify-center flex-row mt-7 items-end'>
+                <p className='text-center text-white text-4xl font-semibold'>$10</p>
+                <p className='text-white font-semibold text-'>/month</p>
+            </div>
+            <p className='text-center text-sm mt-2 text-white'>Billed annnually.</p>
+            <div className='mt-7 flex'>
+                {/* min symbol */}
+                <div>
+                    -
+                </div>
+                <div>
+                    1 USER
+                </div>
+                <div>+</div>
+            </div>
         </div>
     </div>
   )
