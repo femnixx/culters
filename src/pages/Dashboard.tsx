@@ -181,11 +181,11 @@ const Dashboard = () => {
         <p className='pt-2.5 text-center text-xs bg-clip-text bg-gradient-to-b text-transparent from-white/0 to-white'>Flexible plans for teams of any size</p>
 
         {/* Cards for plans */}
-        <div className='flex flex-col px-6'>
+        <div className='flex flex-col px-5 py-8 mx-6 mt-12 bg-white/10 rounded-xl'>
             {/* main card */}
             <div className='flex flex-col justify-center items-center'>
                 <div>
-                    <img src={lightning} alt="lightninng" />
+                    <img src={zap} alt="lightninng" />
                 </div>
                 <p>Basic plan</p>
             </div>
