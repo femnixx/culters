@@ -185,7 +185,7 @@ const Dashboard = () => {
             {/* main card */}
             <div className='flex flex-col justify-center items-center'>
                 <div>
-                    <img src={zap} alt="lightninng" />
+                    <img src={zap} alt="white lightning" />
                 </div>
                 <p>Basic plan</p>
             </div>
