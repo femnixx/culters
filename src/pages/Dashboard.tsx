@@ -194,16 +194,18 @@ const Dashboard = () => {
                 <p className='text-white font-semibold text-'>/month</p>
             </div>
             <p className='text-center text-sm mt-2 text-white'>Billed annnually.</p>
-            <div className='mt-7 flex'>
-                {/* min symbol */}
-                <div>
-                    -
+            <div className='w-full px-10'>
+                <div className='mt-7 flex bg-white justify-between px-3 rounded-full py-1 items-center'>
+                    <div className='rounded-full border-1 px-2 border-[#D9D9D9]'>
+                        -
+                    </div>
+                    <div className='font-semibold text-sm'>
+                        1 USER
+                    </div>
+                    <div className='rounded-full border-1 px-2 border-[#D9D9D9]'>+</div>
                 </div>
-                <div>
-                    1 USER
-                </div>
-                <div>+</div>
             </div>
+            <p>Hi there</p>
         </div>
     </div>
   )
