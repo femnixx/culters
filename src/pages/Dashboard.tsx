@@ -319,6 +319,20 @@ const Dashboard = () => {
             </div>
             <div className='w-full flex justify-center items-center'><button className='w-fit px-5 py-1.5 rounded-full mt-7 border-2 border-white/10 text-white'>Get Started</button></div>
         </div>
+            <div className='mt-5 flex flex-col items-center justify-center gap-y-5 text-center text-white bg-white/10 px-2 py-5 mx-2 rounded-xl'>
+                <p className='text-xl font-semibold'>Ready to Transform Your Workflow?</p>
+                <p className='text-sm'>Start your 14-day free trial. No credit card required.</p>
+                <button className='bg-[#35A89A] border-gray-500 p-3 py-1.5 rounded-full border-1'>Get Started Free</button>
+            </div>
+
+            {/* feedback card */}
+            <div className='bg-white/10 px-5 mx-5 mt-25 pt-5'>
+                <p className='text-white font-semibold'>Feedback</p>
+                <div className='pt-5 flex'>
+                    <p className='inline text-sm'>Seeking personalized support? <div>Request a call from our team</div></p>
+                  
+                </div>
+            </div>  
     </div>
   )
 }
