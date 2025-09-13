@@ -15,6 +15,7 @@ import zap from "../assets/zap.svg";
 import twolayers from "../assets/twolayers.svg";
 import threelayers from "../assets/threelayers.svg";
 import checkicon from "../assets/checkicon.svg";
+import checkiconblack from "../assets/checkiconblack.svg";
 
 const Dashboard = () => {
   return (
@@ -248,24 +249,24 @@ const Dashboard = () => {
             </div>
             <div className='flex flex-col gap-y-2 text-black'>
                 <div className='flex mt-7 '>
-                    <img src={checkicon} alt="check icon" className='pr-2'/>
-                    <p>Flexible Plans</p>
+                    <img src={checkiconblack} alt="check icon" className='pr-2'/>
+                    <p>Access to all basic features</p>
                 </div>
                 <div className='flex'>
-                     <img src={checkicon} alt="check icon" className='pr-2'/>
-                    <p>Scalability</p>
+                     <img src={checkiconblack} alt="check icon" className='pr-2'/>
+                    <p>Basic reporting and analytics</p>
                 </div>
                 <div className='flex'>
-                     <img src={checkicon} alt="check icon" className='pr-2'/>
-                    <p>24/7 Email Support</p>
+                     <img src={checkiconblack} alt="check icon" className='pr-2'/>
+                    <p>Up to 10 individual users</p>
                 </div>
                 <div className='flex'>
-                     <img src={checkicon} alt="check icon" className='pr-2'/>
-                    <p>200 Recording</p>
+                     <img src={checkiconblack} alt="check icon" className='pr-2'/>
+                    <p>20GB individual data each user</p>
                 </div>
                 <div className='flex'>
-                     <img src={checkicon} alt="check icon" className='pr-2'/>
-                    <p>30 Days Backup</p>
+                     <img src={checkiconblack} alt="check icon" className='pr-2'/>
+                    <p>Basic chat and email support</p>
                 </div>
             </div>
             <div className='w-full flex justify-center items-center'><button className='w-fit px-5 py-1.5 rounded-full mt-7 border-2 border-white/10 text-black'>Get Started</button></div>
