@@ -230,31 +230,23 @@ const Dashboard = () => {
             </div>
             <div className='w-full flex justify-center items-center'><button className='w-fit px-5 py-1.5 rounded-full mt-7 border-2 border-white/10 text-white'>Get Started</button></div>
         </div>
-        <div className='flex flex-col px-5 py-4 mx-6 mt-12 bg-white/10 rounded-xl'>
+        <div className='flex flex-col px-5 py-4 mx-6 mt-12 bg-white rounded-xl'>
             {/* main card */}
             <div className='flex flex-col justify-center items-center'>
-                <div className='bg-white/10 p-3 rounded-full'>
-                    <img src={zap} alt="white lightning" />
+                <div className='bg-[#35A89A] p-3 rounded-full'>
+                    <img src={twolayers} alt="white lightning" />
                 </div>
-                <p className='text-center text-white mt-2'>Basic plan</p>
+                <p className='text-center text-black mt-2'>Business Plan</p>
             </div>
             <div className='flex justify-center flex-row mt-5 items-end'>
-                <p className='text-center text-white text-4xl font-semibold'>$10</p>
-                <p className='text-white font-semibold text-'>/month</p>
+                <p className='text-center text-black text-4xl font-semibold'>$20</p>
+                <p className='text-black font-semibold text-'>/month</p>
             </div>
-            <p className='text-center text-sm mt-2 text-white'>Billed annnually.</p>
+            <p className='text-center text-sm mt-2 text-black'>Billed annnually.</p>
             <div className='w-full px-10'>
-                <div className='mt-7 flex bg-white justify-between px-3 rounded-full py-1 items-center'>
-                    <div className='rounded-full border-1 px-2 border-[#D9D9D9]'>
-                        -
-                    </div>
-                    <div className='font-semibold text-sm'>
-                        1 USER
-                    </div>
-                    <div className='rounded-full border-1 px-2 border-[#D9D9D9]'>+</div>
-                </div>
+                
             </div>
-            <div className='flex flex-col gap-y-2 text-white'>
+            <div className='flex flex-col gap-y-2 text-black'>
                 <div className='flex mt-7 '>
                     <img src={checkicon} alt="check icon" className='pr-2'/>
                     <p>Flexible Plans</p>
@@ -276,7 +268,7 @@ const Dashboard = () => {
                     <p>30 Days Backup</p>
                 </div>
             </div>
-            <div className='w-full flex justify-center items-center'><button className='w-fit px-5 py-1.5 rounded-full mt-7 border-2 border-white/10 text-white'>Get Started</button></div>
+            <div className='w-full flex justify-center items-center'><button className='w-fit px-5 py-1.5 rounded-full mt-7 border-2 border-white/10 text-black'>Get Started</button></div>
         </div>
         <div className='flex flex-col px-5 py-4 mx-6 mt-12 bg-white/10 rounded-xl'>
             {/* main card */}
@@ -284,7 +276,7 @@ const Dashboard = () => {
                 <div className='bg-white/10 p-3 rounded-full'>
                     <img src={zap} alt="white lightning" />
                 </div>
-                <p className='text-center text-white mt-2'>Basic plan</p>
+                <p className='text-center text-white mt-2'>Basic plan 2</p>
             </div>
             <div className='flex justify-center flex-row mt-5 items-end'>
                 <p className='text-center text-white text-4xl font-semibold'>$10</p>
