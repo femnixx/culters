@@ -249,24 +249,24 @@ const Dashboard = () => {
             </div>
             <div className='flex flex-col gap-y-2 text-black'>
                 <div className='flex mt-7 '>
-                    <img src={checkiconblack} alt="check icon" className='pr-2'/>
-                    <p>Access to all basic features</p>
+                    <img src={checkiconblack} alt="check icon" className='pr-2 w-8'/>
+                    <p className='text-sm'>Access to all basic features</p>
                 </div>
                 <div className='flex'>
-                     <img src={checkiconblack} alt="check icon" className='pr-2'/>
-                    <p>Basic reporting and analytics</p>
+                     <img src={checkiconblack} alt="check icon" className='pr-2 w-8'/>
+                    <p className='text-sm'>Basic reporting and analytics</p>
                 </div>
                 <div className='flex'>
-                     <img src={checkiconblack} alt="check icon" className='pr-2'/>
-                    <p>Up to 10 individual users</p>
+                     <img src={checkiconblack} alt="check icon" className='pr-2 w-8'/>
+                    <p className='text-sm'>Up to 10 individual users</p>
                 </div>
                 <div className='flex'>
-                     <img src={checkiconblack} alt="check icon" className='pr-2'/>
-                    <p>20GB individual data each user</p>
+                     <img src={checkiconblack} alt="check icon" className='pr-2 w-8'/>
+                    <p className='text-sm'>20GB individual data each user</p>
                 </div>
                 <div className='flex'>
-                     <img src={checkiconblack} alt="check icon" className='pr-2'/>
-                    <p>Basic chat and email support</p>
+                     <img src={checkiconblack} alt="check icon" className='pr-2 w-8'/>
+                    <p className='text-sm'>Basic chat and email support</p>
                 </div>
             </div>
             <div className='w-full flex justify-center items-center'><button className='w-fit px-5 py-1.5 rounded-full mt-7 border-2 border-white/10 text-black'>Get Started</button></div>
