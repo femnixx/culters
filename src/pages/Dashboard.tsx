@@ -269,18 +269,18 @@ const Dashboard = () => {
                     <p className='text-sm'>Basic chat and email support</p>
                 </div>
             </div>
-            <div className='w-full flex justify-center items-center'><button className='w-fit px-5 py-1.5 rounded-full mt-7 border-2 border-white/10 text-black'>Get Started</button></div>
+            <div className='w-full flex justify-center items-center'><button className='w-fit px-5 py-1.5 rounded-full mt-7 border-2 border-white/50 text-white bg-[#35A89A]'>Get Started</button></div>
         </div>
         <div className='flex flex-col px-5 py-4 mx-6 mt-12 bg-white/10 rounded-xl'>
             {/* main card */}
             <div className='flex flex-col justify-center items-center'>
                 <div className='bg-white/10 p-3 rounded-full'>
-                    <img src={zap} alt="white lightning" />
+                    <img src={threelayers} alt="white lightning" />
                 </div>
-                <p className='text-center text-white mt-2'>Basic plan 2</p>
+                <p className='text-center text-white mt-2'>Enterprise Plan</p>
             </div>
             <div className='flex justify-center flex-row mt-5 items-end'>
-                <p className='text-center text-white text-4xl font-semibold'>$10</p>
+                <p className='text-center text-white text-4xl font-semibold'>$40</p>
                 <p className='text-white font-semibold text-'>/month</p>
             </div>
             <p className='text-center text-sm mt-2 text-white'>Billed annnually.</p>
