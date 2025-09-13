@@ -297,24 +297,24 @@ const Dashboard = () => {
             </div>
             <div className='flex flex-col gap-y-2 text-white'>
                 <div className='flex mt-7 '>
-                    <img src={checkicon} alt="check icon" className='pr-2'/>
-                    <p>Flexible Plans</p>
+                    <img src={checkicon} alt="check icon" className='pr-2 w-8'/>
+                    <p>Access to all basic features</p>
                 </div>
                 <div className='flex'>
-                     <img src={checkicon} alt="check icon" className='pr-2'/>
-                    <p>Scalability</p>
+                     <img src={checkicon} alt="check icon" className='pr-2 w-8'/>
+                    <p>Basic reporting and analytics</p>
                 </div>
                 <div className='flex'>
-                     <img src={checkicon} alt="check icon" className='pr-2'/>
-                    <p>24/7 Email Support</p>
+                     <img src={checkicon} alt="check icon" className='pr-2 w-8'/>
+                    <p>Up to 10 individual users</p>
                 </div>
                 <div className='flex'>
-                     <img src={checkicon} alt="check icon" className='pr-2'/>
-                    <p>200 Recording</p>
+                     <img src={checkicon} alt="check icon" className='pr-2 w-8'/>
+                    <p>20GB individual data each user</p>
                 </div>
                 <div className='flex'>
-                     <img src={checkicon} alt="check icon" className='pr-2'/>
-                    <p>30 Days Backup</p>
+                     <img src={checkicon} alt="check icon" className='pr-2 w-8'/>
+                    <p>Basic chat and email support</p>
                 </div>
             </div>
             <div className='w-full flex justify-center items-center'><button className='w-fit px-5 py-1.5 rounded-full mt-7 border-2 border-white/10 text-white'>Get Started</button></div>
