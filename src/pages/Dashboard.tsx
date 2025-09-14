@@ -386,6 +386,11 @@ const Dashboard = () => {
                 <p>Press</p>
                </div>
             </div>
+               {/* Subscription */}
+               <div className='flex flex-col mt-12 mx-5 gap-y-3'>
+                   <p className='font-semibold text-white'>Subscription</p>
+                   <input type="text" placeholder='E-mail' className='border-1 rounded-sm border-[#FFFFFF]/12.5 px-3 py-1.5 text-sm'/>
+               </div>
     </div>
   )
 }
