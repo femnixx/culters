@@ -397,10 +397,18 @@ const Dashboard = () => {
                </div>
                {/* social media */}
                <div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+                <div>
+                    <img src={facebook} alt="facebook" />
+                </div>
+                <div>
+                    <img src={instagram} alt="instagram" />
+                </div>
+                <div>
+                    <img src={youtube} alt="youtube" />
+                </div>
+                <div>
+                    <img src={twitter} alt="twitter" />
+                </div>
                </div>
     </div>
   )
