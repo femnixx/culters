@@ -391,6 +391,13 @@ const Dashboard = () => {
                    <p className='font-semibold text-white'>Subscription</p>
                    <input type="text" placeholder='E-mail' className='border-1 rounded-sm border-[#FFFFFF]/12.5 px-3 py-1.5 text-sm'/>
                </div>
+               {/* social media */}
+               <div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+               </div>
     </div>
   )
 }
