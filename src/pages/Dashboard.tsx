@@ -326,18 +326,36 @@ const Dashboard = () => {
             </div>
 
             {/* feedback card */}
-            <div className='bg-white/10 px-5 mx-5 mt-25 pt-5 rounded-xl'>
+            <div className='bg-white/10 px-5 mx-5 mt-25 pt-5 rounded-xl pb-5'>
                 <p className='text-white font-semibold'>Feedback</p>
                 <div className='pt-5 flex'>
                     <p className='inline text-xl text-white/40'>Seeking personalized support? <span className='text-white'>Request a call from our team</span></p>
                 </div>
                 <div className='gap-y-3 flex flex-col'>
-                    <input type="text" placeholder='YOUR NAME' className='border-1 border-gray-300 mt-6 py-1.5 rounded-lg'/>
-                    <input type="text" placeholder='PHONE NUMBER' className='border-1 border-gray-300 py-1.5 rounded-lg'/>
+                    <input type="text" placeholder='YOUR NAME' className='border-1 border-gray-300 mt-6 py-1 rounded-sm'/>
+                    <input type="text" placeholder='PHONE NUMBER' className='border-1 border-gray-300 py-1 rounded-sm'/>
                 </div>
                 <button className='px-4 py-1.5 mt-6 rounded-full border-gray-500 border-2 text-white bg-[#35A89A]'>Send a request</button>
                 <p className='mt-13 text-xs text-white font-bold'>Privacy</p>
             </div>  
+            {/* product, resources, and company references */}
+            <div className='grid grid-cols-3 gap-8 px-5'>
+                <p className='font-semibold'>Product</p>
+                <p className='font-semibold'>Resources</p>
+                <p className='font-semibold'>Company</p>
+                <p>Features</p>
+                <p>Documentation</p>
+                <p>About</p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+            </div>
     </div>
   )
 }
