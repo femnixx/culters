@@ -16,6 +16,10 @@ import twolayers from "../assets/twolayers.svg";
 import threelayers from "../assets/threelayers.svg";
 import checkicon from "../assets/checkicon.svg";
 import checkiconblack from "../assets/checkiconblack.svg";
+import facebook from "../assets/facebook.svg";
+import instagram from "../assets/instagram.svg";
+import twitter from "../assets/twitter.svg";
+import youtube from "../assets/youtube.svg";
 
 const Dashboard = () => {
   return (
