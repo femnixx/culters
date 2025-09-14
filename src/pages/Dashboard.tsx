@@ -339,22 +339,52 @@ const Dashboard = () => {
                 <p className='mt-13 text-xs text-white font-bold'>Privacy</p>
             </div>  
             {/* product, resources, and company references */}
-            <div className='grid grid-cols-3 gap-8 px-5'>
-                <p className='font-semibold'>Product</p>
-                <p className='font-semibold'>Resources</p>
-                <p className='font-semibold'>Company</p>
+            <div className='grid grid-cols-3 gap-8 px-5 content-center mt-13 text-white gap-x-10 gap-y-3'>
+               <div className="flex items-center justify-start font-semibold ">
+                <p>Product</p>
+               </div>
+               <div className="flex items-center justify-start font-semibold ">
+                <p>Resources</p>
+               </div>
+               <div className="flex items-center justify-start font-semibold ">
+                <p>Company</p>
+               </div>
+               <div className="flex items-center justify-start font-light text-xs">
                 <p>Features</p>
+               </div>
+               <div className="flex items-center justify-start font-light text-xs">
                 <p>Documentation</p>
+               </div>
+               <div className="flex items-center justify-start font-light text-xs">
                 <p>About</p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
+               </div>
+               <div className="flex items-center justify-start font-light text-xs">
+                <p>Solutions</p>
+               </div>
+               <div className="flex items-center justify-start font-light text-xs">
+                <p>Help Center</p>
+               </div>
+               <div className="flex items-center justify-start font-light text-xs">
+                <p>Careers</p>
+               </div>
+               <div className="flex items-center justify-start font-light text-xs">
+                <p>Pricing</p>
+               </div>
+               <div className="flex items-center justify-start font-light text-xs">
+                <p>Guides</p>
+               </div>
+               <div className="flex items-center justify-start font-light text-xs">
+                <p>Blog</p>
+               </div>
+               <div className="flex items-center justify-start font-light text-xs">
+                <p>Updates</p>
+               </div>
+               <div className="flex items-center justify-start font-light text-xs">
+                <p>API Status</p>
+               </div>
+               <div className="flex items-center justify-start font-light text-xs">
+                <p>Press</p>
+               </div>
             </div>
     </div>
   )
