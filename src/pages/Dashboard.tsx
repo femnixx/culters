@@ -396,18 +396,18 @@ const Dashboard = () => {
                    <input type="text" placeholder='E-mail' className='border-1 rounded-sm border-[#FFFFFF]/12.5 px-3 py-1.5 text-sm'/>
                </div>
                {/* social media */}
-               <div>
+               <div className='flex justify-center items-center mt-16 gap-x-3'>
                 <div>
-                    <img src={facebook} alt="facebook" />
+                    <img src={facebook} alt="facebook" className='border-1 border-white/12.5 p-3 rounded-full '/>
                 </div>
                 <div>
-                    <img src={instagram} alt="instagram" />
+                    <img src={instagram} alt="instagram" className='border-1 border-white/12.5 p-3 rounded-full'/>
                 </div>
                 <div>
-                    <img src={youtube} alt="youtube" />
+                    <img src={youtube} alt="youtube" className='border-1 border-white/12.5 p-3 rounded-full'/>
                 </div>
                 <div>
-                    <img src={twitter} alt="twitter" />
+                    <img src={twitter} alt="twitter" className='border-1 border-white/12.5 p-3 rounded-full'/>
                 </div>
                </div>
     </div>
