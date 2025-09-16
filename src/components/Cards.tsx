@@ -1,6 +1,6 @@
 import { gsap } from "gsap";
 import { useEffect, useRef, useState } from "react";
-import imagesvg2 from "../assets/imagesvg2.svg";
+import quote from "../assets/image3removebg.png";
 
 const testimonials = [
   {
@@ -52,11 +52,14 @@ export default function TestimonialSlider() {
   return (
     <div className="flex justify-center items-center mt-10">
       {/* main card */}
-      <div className="bg-[#D3DED2] px-5 py-3 flex flex-col">
-        <div className="flex bg-white px-3">
-        <p>{index} of {testimonials.length}</p>
-        <img src={imagesvg2} alt="image svsg2" />
+      <div className="flex flex-col bg-[#D3DED2]">
+        <div className=" px-5 py-3 flex ">
+          <div className="flex bg-white px-3 h-fit">
+          <p>{index} of {testimonials.length}</p>
+          </div>
+          <img src={quote} alt="image svsg2" />
         </div>
+      <p>"{testimonials[index].text}"</p>
       </div>
     </div>
   );
