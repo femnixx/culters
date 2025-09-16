@@ -80,14 +80,16 @@ export default function TestimonialSlider() {
             </button>
           </div>
       </div>
-            <hr className="border-1.5 mx-5 mt-7 bg-white text-white"/> 
-          <div className="mt-5 flex items-center justify-center">
+            <hr className="border-1 mx-5 mt-7 bg-white text-white"/> 
+          <div className="mt-5 flex items-start justify-center ">
             {/* profile */}
-            <div className="rounded-full bg-white p-5"></div>
+            <div className="rounded-full bg-white p-5 ">
+              <img src={testimonials[index].img} alt="" />
+            </div>
             {/* name and position */}
-            <div className="flex-col flex">
-              <p>{testimonials[index].author}</p>
-              <p></p>
+            <div className="flex-col flex ml-2 text-xs gap-y-0.5 mb-6">
+              <p className="font-bold text-sm">{testimonials[index].author}</p>
+              <p>{testimonials[index].role}</p>
             </div>
           </div>
       </div>
