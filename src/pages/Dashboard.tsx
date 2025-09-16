@@ -341,7 +341,13 @@ const Dashboard = () => {
                     {/* <input type="text" placeholder='PHONE NUMBER' className='border-1 border-gray-300 py-1 rounded-sm'/> */}
 
                     {/* using MUI */}
-                    <TextField variant="outlined" label="YOUR NAME" className="text-xs"></TextField>
+                    <div className="mt-5">
+                        <TextField variant="outlined" label="YOUR NAME"  size="small" sx={{
+                            "& .MuiInputLabel-root": {
+                                fontSize: "12px",
+                            }
+                        }}></TextField>
+                    </div>
                 </div>
                 <button className='px-4 py-1.5 mt-6 rounded-full border-gray-500 border-2 text-white bg-[#35A89A]'>Send a request</button>
                 <p className='mt-13 text-xs text-white font-bold'>Privacy</p>
