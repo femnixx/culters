@@ -23,7 +23,7 @@ import '../index.css';
 
 const Dashboard = () => {
   return (
-    <div className='bg-linear-to-b from-[#0C111D] from-0% to-[#1E5D5C] to-100% w-screen h-screen overflow-x-hidden overflow-y-scroll'>
+    <div className='bg-linear-to-b from-[#0C111D] from-0% to-[#1E5D5C] to-100% w-screen h-screen  overflow-y-scroll overflow-x-hidden'>
         <div className='flex justify-between pt-15 px-5'>
             <div className='flex gap-x-2 items-center justify-center'>
                 {/* logo */}
