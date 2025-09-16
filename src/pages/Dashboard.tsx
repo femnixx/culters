@@ -1,25 +1,24 @@
-import React from 'react'
-import midjourney from "../assets/midjourney.png";
-import wave from "../assets/wave.svg";
-import logoswrap from "../assets/logoswrap.svg";
-import '../index.css';
-import stepsbar from "../assets/stepsbar.svg";
 import arrowright from "../assets/arrowright.svg";
-import lightning from "../assets/lightning.svg";
-import shield from "../assets/shield.svg";
-import clocks from "../assets/clocks.svg";
-import people from "../assets/people.svg";
-import gemini from "../assets/gemini.svg";
-import settings from "../assets/settings.svg";
-import zap from "../assets/zap.svg";
-import twolayers from "../assets/twolayers.svg";
-import threelayers from "../assets/threelayers.svg";
 import checkicon from "../assets/checkicon.svg";
 import checkiconblack from "../assets/checkiconblack.svg";
+import clocks from "../assets/clocks.svg";
 import facebook from "../assets/facebook.svg";
+import gemini from "../assets/gemini.svg";
 import instagram from "../assets/instagram.svg";
+import lightning from "../assets/lightning.svg";
+import logoswrap from "../assets/logoswrap.svg";
+import midjourney from "../assets/midjourney.png";
+import people from "../assets/people.svg";
+import settings from "../assets/settings.svg";
+import shield from "../assets/shield.svg";
+import stepsbar from "../assets/stepsbar.svg";
+import threelayers from "../assets/threelayers.svg";
 import twitter from "../assets/twitter.svg";
+import twolayers from "../assets/twolayers.svg";
+import wave from "../assets/wave.svg";
 import youtube from "../assets/youtube.svg";
+import zap from "../assets/zap.svg";
+import '../index.css';
 
 const Dashboard = () => {
   return (
@@ -391,7 +390,7 @@ const Dashboard = () => {
                </div>
             </div>
                {/* Subscription */}
-               <div className='flex flex-col mt-12 mx-5 gap-y-3'>
+               <div className='flex flex-col my-12 mx-5 gap-y-3'>
                    <p className='font-semibold text-white'>Subscription</p>
                    <input type="text" placeholder='E-mail' className='border-1 rounded-sm border-[#FFFFFF]/12.5 px-3 py-1.5 text-sm'/>
                </div>
