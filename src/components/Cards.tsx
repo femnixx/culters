@@ -64,8 +64,9 @@ export default function TestimonialSlider() {
         {/* read more */}
         <div className="text-center flex justify-center items-center px-3 py-1.5 bg-white text-black font-semibold">
           <p>Read More</p>
+        </div>
           {/* arrow */}
-          <div className="flex justify-center gap-4 mt-4">
+          <div className="flex justify-between gap-4 mt-4">
             <button onClick={prevCard}
             className="bg-gray-200 px-3 py-1 rounded-full hover:bg-gray-300 transition "
             > ←</button>
@@ -75,8 +76,8 @@ export default function TestimonialSlider() {
               →
             </button>
           </div>
-        </div>
       </div>
+          <div className="bg-black border-[0.09px]">p</div>
       </div>
     </div>
   );
