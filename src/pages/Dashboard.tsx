@@ -18,6 +18,7 @@ import twolayers from "../assets/twolayers.svg";
 import wave from "../assets/wave.svg";
 import youtube from "../assets/youtube.svg";
 import zap from "../assets/zap.svg";
+import Cards from "../components/Cards";
 import '../index.css';
 
 const Dashboard = () => {
@@ -180,7 +181,7 @@ const Dashboard = () => {
         <p className='pt-26 text-center text-xl text-transparent bg-clip-text bg-gradient-to-b from-white/0 to-white/100 '>What Our Customers Say</p>
         <p className='pt-2.5 text-xs text-center text-transparent bg-clip-text bg-gradient-to-b from-white/0 to-white/100 '>Join thousands of satisfied teams using FlowPro</p>
 
-        <p className='pt-12 text-center'>Some cards</p>
+        <Cards></Cards>
         
         <p className='pt-25 text-center text-xl text-transparent bg-clip-text bg-gradient-to-t from-[#FFFFFF] from-100% to-[#FFFFFF]/0 to-0%'>Choose Your Plan</p>
         <p className='pt-2.5 text-center text-xs bg-clip-text bg-gradient-to-b text-transparent from-white/0 to-white'>Flexible plans for teams of any size</p>
