@@ -345,6 +345,13 @@ const Dashboard = () => {
                         <TextField variant="outlined" label="YOUR NAME"  size="small" sx={{
                             "& .MuiInputLabel-root": {
                                 fontSize: "12px",
+                                color: "white"
+                            },
+                            "& fieldset": {
+                                borderColor: "rgba(255, 255, 255, 0.24)"
+                            },
+                            "&.Mui-focused fieldset": {
+                                borderColor: "white"
                             }
                         }}></TextField>
                     </div>
