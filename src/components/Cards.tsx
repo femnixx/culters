@@ -62,7 +62,7 @@ export default function TestimonialSlider() {
             <img src={quote} alt="image svsg2" className="w-30 mt-5"/>
           </div>
         </div>
-      <p className="mx-3 text-sm text-[#4B5563] mt-3">"{testimonials[index].text}"</p>
+      <p className="mx-3 text-sm text-[#4B5563] mt-3 leading-7">"{testimonials[index].text}"</p>
       <div className="flex justify-between">
         {/* read more */}
         <div className="text-center flex justify-center items-center px-5 py-3 bg-white text-[#1E381C] font-semibold mt-16 ml-10 rounded-full text-xs">
