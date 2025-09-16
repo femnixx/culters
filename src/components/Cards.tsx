@@ -51,8 +51,11 @@ export default function TestimonialSlider() {
   return (
     <div className="flex justify-center items-center mt-10">
       {/* main card */}
-      <div className="bg-white px-5 py-3 flex flex-col">
-        <p>Text</p>
+      <div className="bg-[#D3DED2] px-5 py-3 flex flex-col">
+        <div className="flex bg-white px-3">
+
+        </div>
+        <p>Hi there</p>
       </div>
     </div>
   );
