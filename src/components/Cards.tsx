@@ -50,28 +50,31 @@ export default function TestimonialSlider() {
   const prevCard = () => setIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length);
 
   return (
-    <div className="flex justify-center items-center mt-10">
+    <div className="flex justify-center items-center mt-10 mx-5">
       {/* main card */}
-      <div className="flex flex-col bg-[#D3DED2]">
+      <div className="flex flex-col bg-[#D3DED2] rounded-xl">
         <div className=" px-5 py-3 flex ">
-          <div className="flex bg-white px-3 h-fit">
-          <p>{index} of {testimonials.length}</p>
+          {/* index and svg  */}
+          <div className="flex justify-between w-full">
+            <div className="flex bg-white px-4 ml-5 mt-5 rounded-full py-1 h-fit text-sm">
+            <p className="text-xs py-0.5">{index} of {testimonials.length}</p>
+            </div>
+            <img src={quote} alt="image svsg2" className="w-30 mt-5"/>
           </div>
-          <img src={quote} alt="image svsg2" />
         </div>
-      <p>"{testimonials[index].text}"</p>
+      <p className="mx-3 text-sm text-[#4B5563] mt-3">"{testimonials[index].text}"</p>
       <div className="flex justify-between">
         {/* read more */}
-        <div className="text-center flex justify-center items-center px-3 py-1.5 bg-white text-black font-semibold">
+        <div className="text-center flex justify-center items-center px-5 py-3 bg-white text-[#1E381C] font-semibold mt-16 ml-10 rounded-full text-xs">
           <p>Read More</p>
         </div>
           {/* arrow */}
-          <div className="flex justify-between gap-4 mt-4">
+          <div className="gap-x-2 mt-4 mx-4 flex">
             <button onClick={prevCard}
-            className="bg-gray-200 px-3 py-1 rounded-full hover:bg-gray-300 transition "
+            className=" py-1 rounded-full hover:bg-gray-300 transition "
             > ←</button>
             <button onClick={nextCard}
-            className="bg-gray-200 px-3 py-1 rounded-full hover:bg-gray-300 transition"
+            className="  py-1 rounded-full hover:bg-gray-300 transition"
             >
               →
             </button>
