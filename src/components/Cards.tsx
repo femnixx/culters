@@ -1,12 +1,12 @@
 import { gsap } from "gsap";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const testimonials = [
   {
     text: "The best investment we've made for our team's productivity. Highly recommended!",
     author: "Millon Zahino",
     role: "Behavioral Science",
-    img: "https://via.placeholder.com/40" // replace with real image
+    img: "https://via.placeholder.com/40"
   },
   {
     text: "Amazing tool! Boosted our efficiency by 200%.",
@@ -24,74 +24,35 @@ const testimonials = [
 
 export default function TestimonialSlider() {
   const [index, setIndex] = useState(0);
-  const cardRef = useRef(null);
+  const containerRef = useRef<HTMLDivElement | null>(null);
 
-  const nextCard = () => {
-    gsap.to(cardRef.current, {
-      x: -200,
-      opacity: 0,
-      duration: 0.4,
-      ease: "power2.in",
-      onComplete: () => {
-        setIndex((prev) => (prev + 1) % testimonials.length);
-        gsap.fromTo(
-          cardRef.current,
-          { x: 200, opacity: 0 },
-          { x: 0, opacity: 1, duration: 0.5, ease: "power2.out" }
-        );
-      }
+  // Animate when index changes
+  useEffect(() => {
+    if (!containerRef.current) return; // ✅ null check here
+
+    const cards = containerRef.current.querySelectorAll<HTMLElement>(".testimonial-card");
+    cards.forEach((card: HTMLElement, i: number) => { // ✅ type for card
+      const offset = (i - index + testimonials.length) % testimonials.length;
+      gsap.to(card, {
+        x: offset * 30,
+        y: offset * 10,
+        opacity: offset === 0 ? 1 : 0.3,
+        scale: offset === 0 ? 1 : 0.95,
+        zIndex: testimonials.length - offset,
+        duration: 0.5,
+        ease: "power2.out"
+      });
     });
-  };
+  }, [index]);
 
-  const prevCard = () => {
-    gsap.to(cardRef.current, {
-      x: 200,
-      opacity: 0,
-      duration: 0.4,
-      ease: "power2.in",
-      onComplete: () => {
-        setIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length);
-        gsap.fromTo(
-          cardRef.current,
-          { x: -200, opacity: 0 },
-          { x: 0, opacity: 1, duration: 0.5, ease: "power2.out" }
-        );
-      }
-    });
-  };
-
-  const { text, author, role, img } = testimonials[index];
+  const nextCard = () => setIndex((prev) => (prev + 1) % testimonials.length);
+  const prevCard = () => setIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length);
 
   return (
-    <div className="flex flex-col items-center justify-center  text-gray-900 mt-5">
-      <div
-        ref={cardRef}
-        className=" bg-white rounded-3xl p-4 mx-2 shadow-lg relative"
-      >
-        <p className="text-sm bg-gray-200 px-3 py-1 rounded-full inline-block mb-2">
-          {index + 1} of {testimonials.length}
-        </p>
-        <p className="text-3xl font-bold opacity-10 absolute top-6 right-6">“</p>
-        <p className="text-lg mb-6">{text}</p>
-
-        <button className="bg-gray-100 px-4 py-2 rounded-full font-bold">
-          Read More
-        </button>
-
-        <div className="flex justify-end gap-4 mt-4">
-          <button onClick={prevCard}>←</button>
-          <button onClick={nextCard}>→</button>
-        </div>
-
-        <hr className="my-4" />
-
-        <div className="flex items-center gap-3">
-          <img src={img} alt={author} className="w-10 h-10 rounded-full" />
-          <div>
-            <p className="font-bold">{author}</p>
-            <p className="text-sm text-gray-500">{role}</p>
-          </div>
-        </div>
+    <div className="flex justify-center items-center mt-10">
+      {/* main card */}
+      <div className="bg-white">
+        <p>Text</p>
       </div>
     </div>
   );
