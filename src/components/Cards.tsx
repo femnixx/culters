@@ -1,5 +1,6 @@
 import { gsap } from "gsap";
 import { useEffect, useRef, useState } from "react";
+import imagesvg2 from "../assets/imagesvg2.svg";
 
 const testimonials = [
   {
@@ -53,9 +54,9 @@ export default function TestimonialSlider() {
       {/* main card */}
       <div className="bg-[#D3DED2] px-5 py-3 flex flex-col">
         <div className="flex bg-white px-3">
-
+        <p>{index} of {testimonials.length}</p>
+        <img src={imagesvg2} alt="image svsg2" />
         </div>
-        <p>Hi there</p>
       </div>
     </div>
   );
