@@ -1,3 +1,4 @@
+import { TextField } from "@mui/material";
 import arrowright from "../assets/arrowright.svg";
 import checkicon from "../assets/checkicon.svg";
 import checkiconblack from "../assets/checkiconblack.svg";
@@ -336,8 +337,11 @@ const Dashboard = () => {
                     <p className='inline text-xl text-white/40'>Seeking personalized support? <span className='text-white'>Request a call from our team</span></p>
                 </div>
                 <div className='gap-y-3 flex flex-col'>
-                    <input type="text" placeholder='YOUR NAME' className='border-1 border-gray-300 mt-6 py-1 rounded-sm'/>
-                    <input type="text" placeholder='PHONE NUMBER' className='border-1 border-gray-300 py-1 rounded-sm'/>
+                    {/* <input type="text" placeholder='YOUR NAME' className='border-1 border-gray-300 mt-6 py-1 rounded-sm'/> */}
+                    {/* <input type="text" placeholder='PHONE NUMBER' className='border-1 border-gray-300 py-1 rounded-sm'/> */}
+
+                    {/* using MUI */}
+                    <TextField variant="outlined" label="YOUR NAME" className="text-xs"></TextField>
                 </div>
                 <button className='px-4 py-1.5 mt-6 rounded-full border-gray-500 border-2 text-white bg-[#35A89A]'>Send a request</button>
                 <p className='mt-13 text-xs text-white font-bold'>Privacy</p>
