@@ -81,7 +81,15 @@ export default function TestimonialSlider() {
           </div>
       </div>
             <hr className="border-1.5 mx-5 mt-7 bg-white text-white"/> 
-          
+          <div className="mt-5 flex items-center justify-center">
+            {/* profile */}
+            <div className="rounded-full bg-white p-5"></div>
+            {/* name and position */}
+            <div className="flex-col flex">
+              <p>{testimonials[index].author}</p>
+              <p></p>
+            </div>
+          </div>
       </div>
     </div>
   );
