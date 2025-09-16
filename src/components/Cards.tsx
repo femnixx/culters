@@ -63,10 +63,10 @@ export default function TestimonialSlider() {
   const { text, author, role, img } = testimonials[index];
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-teal-900 text-gray-900">
+    <div className="flex flex-col items-center justify-center  text-gray-900 mt-5">
       <div
         ref={cardRef}
-        className="w-96 bg-white rounded-3xl p-6 shadow-lg relative"
+        className=" bg-white rounded-3xl p-4 mx-2 shadow-lg relative"
       >
         <p className="text-sm bg-gray-200 px-3 py-1 rounded-full inline-block mb-2">
           {index + 1} of {testimonials.length}
