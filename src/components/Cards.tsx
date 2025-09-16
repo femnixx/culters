@@ -62,16 +62,16 @@ export default function TestimonialSlider() {
             <img src={quote} alt="image svsg2" className="w-30 mt-5"/>
           </div>
         </div>
-      <p className="mx-3 text-sm text-[#4B5563] mt-3 leading-7">"{testimonials[index].text}"</p>
+      <p className=" text-sm text-[#4B5563] mt-3 leading-7 mx-7 text-justify">"{testimonials[index].text}"</p>
       <div className="flex justify-between">
         {/* read more */}
         <div className="text-center flex justify-center items-center px-5 py-3 bg-white text-[#1E381C] font-semibold mt-16 ml-10 rounded-full text-xs">
-          <p>Read More</p>
+          <p className="">Read More</p>
         </div>
           {/* arrow */}
-          <div className="gap-x-2 mt-4 mx-4 flex">
+          <div className="gap-x-3.5 mt-4 mx-7 flex items-end">
             <button onClick={prevCard}
-            className=" py-1 rounded-full hover:bg-gray-300 transition "
+            className=" py-1 rounded-full hover:bg-gray-300 transition"
             > ←</button>
             <button onClick={nextCard}
             className="  py-1 rounded-full hover:bg-gray-300 transition"
@@ -80,7 +80,8 @@ export default function TestimonialSlider() {
             </button>
           </div>
       </div>
-          <div className="bg-black border-[0.09px]">p</div>
+            <hr className="border-1.5 mx-5 mt-7 bg-white text-white"/> 
+          
       </div>
     </div>
   );
