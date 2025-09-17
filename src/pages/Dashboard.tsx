@@ -53,7 +53,7 @@ const Dashboard = () => {
                <p  className='text-white'>Book Demo</p>
             </div>
         </div>
-        <img src={wave} alt="wave svg" className='-mt-10'/>
+        <img src={wave} alt="wave svg" className='w-full h-auto -mt-10 '/>
         <p className='text-center text-xs text-[#EAEAEA]/50'>Trusted by 4,000+ companies</p>
         <div className='flex items-center justify-center animate-marquee gap-x-3 pt-5'>
             <img src={logoswrap} alt="logoswrap" className='pt-3 w-auto'/>
