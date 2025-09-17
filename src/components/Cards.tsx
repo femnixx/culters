@@ -7,41 +7,48 @@ const testimonials = [
     text: "The best investment we've made for our team's productivity. Highly recommended!",
     author: "Millon Zahino",
     role: "Behavioral Science",
-    img: "https://via.placeholder.com/40"
+    img: "https://via.placeholder.com/40",
   },
   {
     text: "Amazing tool! Boosted our efficiency by 200%.",
     author: "Sarah Lee",
     role: "Data Analyst",
-    img: "https://via.placeholder.com/40"
+    img: "https://via.placeholder.com/40",
   },
   {
     text: "We can't imagine working without it anymore.",
     author: "James Doe",
     role: "Project Manager",
-    img: "https://via.placeholder.com/40"
-  }
+    img: "https://via.placeholder.com/40",
+  },
 ];
 
 export default function TestimonialSlider() {
   const [index, setIndex] = useState(0);
   const containerRef = useRef<HTMLDivElement | null>(null);
 
-  // Animate when index changes
+  // Animate cards when index changes
   useEffect(() => {
-    if (!containerRef.current) return; // ✅ null check here
+    if (!containerRef.current) return;
 
     const cards = containerRef.current.querySelectorAll<HTMLElement>(".testimonial-card");
-    cards.forEach((card: HTMLElement, i: number) => { // ✅ type for card
+    cards.forEach((card: HTMLElement, i: number) => {
       const offset = (i - index + testimonials.length) % testimonials.length;
+
+      // Petal-like positioning
+      const angle = offset * 10; // tilt angle for fan effect
+      const x = offset * 30; // horizontal shift
+      const y = offset * 15; // vertical shift
+
       gsap.to(card, {
-        x: offset * 30,
-        y: offset * 10,
+        x,
+        y,
+        rotate: angle,
         opacity: offset === 0 ? 1 : 0.3,
-        scale: offset === 0 ? 1 : 0.95,
+        scale: offset === 0 ? 1 : 0.9,
         zIndex: testimonials.length - offset,
         duration: 0.5,
-        ease: "power2.out"
+        ease: "power2.out",
       });
     });
   }, [index]);
@@ -51,47 +58,62 @@ export default function TestimonialSlider() {
 
   return (
     <div className="flex justify-center items-center mt-10 mx-5">
-      {/* main card */}
-      <div className="flex flex-col bg-[#D3DED2] rounded-xl">
-        <div className=" px-5 py-3 flex ">
-          {/* index and svg  */}
-          <div className="flex justify-between w-full">
-            <div className="flex bg-white px-4 ml-5 mt-5 rounded-full py-1 h-fit text-sm">
-            <p className="text-xs py-0.5">{index} of {testimonials.length}</p>
+      <div
+        ref={containerRef}
+        className="relative w-[350px] h-[320px] overflow-hidden flex justify-center items-center"
+      >
+        {testimonials.map((t, i) => (
+          <div
+            key={i}
+            className="testimonial-card absolute w-full h-full bg-[#D3DED2] rounded-xl shadow-lg p-5 flex flex-col justify-between"
+          >
+            {/* Header with index and quote */}
+            <div className="flex justify-between">
+              <div className="flex bg-white px-4 mt-3 rounded-full py-1 h-fit text-sm">
+                <p className="text-xs">{index} of {testimonials.length}</p>
+              </div>
+              <img src={quote} alt="quote" className="w-8 mt-2" />
             </div>
-            <img src={quote} alt="image svsg2" className="w-30 mt-5"/>
-          </div>
-        </div>
-      <p className=" text-sm text-[#4B5563] mt-3 leading-7 mx-7 text-justify">"{testimonials[index].text}"</p>
-      <div className="flex justify-between">
-        {/* read more */}
-        <div className="text-center flex justify-center items-center px-5 py-3 bg-white text-[#1E381C] font-semibold mt-16 ml-10 rounded-full text-xs">
-          <p className="">Read More</p>
-        </div>
-          {/* arrow */}
-          <div className="gap-x-3.5 mt-4 mx-7 flex items-end">
-            <button onClick={prevCard}
-            className=" py-1 rounded-full hover:bg-gray-300 transition"
-            > ←</button>
-            <button onClick={nextCard}
-            className="  py-1 rounded-full hover:bg-gray-300 transition"
-            >
-              →
-            </button>
-          </div>
-      </div>
-            <hr className="border-1 mx-5 mt-7 bg-white text-white"/> 
-          <div className="mt-5 flex items-start justify-center ">
-            {/* profile */}
-            <div className="rounded-full bg-white p-5 ">
-              <img src={testimonials[index].img} alt="" />
+
+            {/* Testimonial text */}
+            <p className="text-sm text-[#4B5563] mt-3 leading-6 text-justify">
+              "{t.text}"
+            </p>
+
+            {/* Footer with buttons and profile */}
+            <div>
+              <div className="flex justify-between items-center mt-4">
+                <div className="text-center flex justify-center items-center px-5 py-2 bg-white text-[#1E381C] font-semibold rounded-full text-xs">
+                  <p>Read More</p>
+                </div>
+                <div className="gap-x-3 mt-2 flex items-end">
+                  <button
+                    onClick={prevCard}
+                    className="py-1 px-2 rounded-full hover:bg-gray-300 transition"
+                  >
+                    ←
+                  </button>
+                  <button
+                    onClick={nextCard}
+                    className="py-1 px-2 rounded-full hover:bg-gray-300 transition"
+                  >
+                    →
+                  </button>
+                </div>
+              </div>
+              <hr className="border-1 mt-4 mb-3" />
+              <div className="flex items-center">
+                <div className="rounded-full bg-white p-3">
+                  <img src={t.img} alt="" />
+                </div>
+                <div className="flex flex-col ml-2 text-xs">
+                  <p className="font-bold text-sm">{t.author}</p>
+                  <p>{t.role}</p>
+                </div>
+              </div>
             </div>
-            {/* name and position */}
-            <div className="flex-col flex ml-2 text-xs gap-y-0.5 mb-6">
-              <p className="font-bold text-sm">{testimonials[index].author}</p>
-              <p>{testimonials[index].role}</p>
-            </div>
           </div>
+        ))}
       </div>
     </div>
   );
